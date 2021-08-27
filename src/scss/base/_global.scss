@@ -1,0 +1,36 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  line-height: normal;
+}
+
+main {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 1450px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
