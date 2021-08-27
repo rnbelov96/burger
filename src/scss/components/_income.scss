@@ -1,0 +1,174 @@
+.income {
+  min-height: 1024px;
+  @include bg;
+  background-image: url('/src/img/bgs/income-bg.png');
+  padding-top: 136px;
+  padding-bottom: 125px;
+  color: black;
+
+  @media (max-width: 991px) {
+    background-image: url('/src/img/bgs/income-bg-yellow.png');
+  }
+
+  @media (max-width: 575px) {
+    min-height: 0;
+  }
+}
+
+.income__title {
+  position: relative;
+
+  & .title__angle-top-left {
+    position: absolute;
+    top: -35px;
+    left: -43px;
+    @media (max-width: 1250px) {
+      top: -25px;
+      left: -25px;
+    }
+    @media (max-width: 575px) {
+      left: -14px;
+    }
+  }
+  & .title__angle-top-right {
+    position: absolute;
+    top: -35px;
+    right: -43px;
+    @media (max-width: 1250px) {
+      top: -25px;
+      right: -25px;
+    }
+    @media (max-width: 575px) {
+      right: -14px;
+    }
+  }
+  & .title__angle-bottom-left {
+    position: absolute;
+    bottom: -35px;
+    left: -43px;
+    @media (max-width: 1250px) {
+      bottom: -25px;
+      left: -25px;
+    }
+    @media (max-width: 575px) {
+      left: -14px;
+    }
+  }
+  & .title__angle-bottom-right {
+    position: absolute;
+    bottom: -35px;
+    right: -43px;
+    @media (max-width: 1250px) {
+      bottom: -25px;
+      right: -25px;
+    }
+    @media (max-width: 575px) {
+      right: -14px;
+    }
+  }
+  font-size: 36px;
+  font-weight: 800;
+  font-family: 'Montserrat';
+  @media (max-width: 575px) {
+    padding-left: 10px;
+  }
+
+  span {
+    color: $yellow;
+  }
+
+  @include max-width(516px);
+  color: black;
+  margin-bottom: 75px;
+
+  @media (max-width: 991px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 575px) {
+    br {
+      display: none;
+    }
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+}
+
+.income__content {
+  @include max-width(502px);
+  position: relative;
+
+  &::before {
+    content: url('/src/img/income-spices.png');
+    left: -388px;
+    top: -481px;
+    position: absolute;
+
+    @media (max-width: 1520px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.income__text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.income__list {
+  @include reset-list;
+  margin-bottom: 67px;
+
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+  }
+}
+
+.income__item {
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 104px;
+  position: relative;
+  margin-bottom: 48px;
+
+  @media (max-width: 575px) {
+    font-size: 17px;
+    padding-left: 82px;
+    margin-bottom: 30px;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  &:nth-child(1)::before {
+    content: url('/src/img/icons/income/1.png');
+  }
+  &:nth-child(2)::before {
+    content: url('/src/img/icons/income/2.png');
+  }
+}
+
+.income__note {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+}

@@ -18,7 +18,174 @@
   </head>
   <body>
     <main>
-      
+      <section class="desc">
+        <div class="container">
+          <header class="header">
+            <div class="container">
+              <div class="header__content">
+                <img
+                  src="./img/icons/logo.png"
+                  alt="Логотип компании"
+                  class="header__logo"
+                />
+                <div class="header__contact-box">
+                  <a href="tel:+79622666968" class="header__phone"
+                    >+7 (962) 266-69-68 </a
+                  ><button class="header__callback js-callback">
+                    заказать звонок
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+          <h1 class="desc__title">
+            Сочная франшиза бургерной в формате Dark Kitchen
+          </h1>
+          <div class="desc__content">
+            <div class="desc__text-box">
+              <p class="desc__text">
+                Покорите тренд на доставку еды и зарабатывайте
+                <b>до 390&nbsp;000 рублей</b>
+                по готовой стратегии, проверенной 3 годами и 10 000+
+                покупателями
+              </p>
+              <ul class="desc__list">
+                <li class="desc__item">
+                  Бизнес в общепите без гостевого зала — работаем только на
+                  доставку
+                </li>
+                <li class="desc__item">
+                  Получите в использование сочные маркетинговые материалы
+                </li>
+                <li class="desc__item">
+                  Готовьте бургеры по авторским рецептам
+                </li>
+              </ul>
+              <button class="button button_present js-present">
+                Получить презентацию
+              </button>
+            </div>
+            <div class="desc__modal-box">
+              <p class="desc__modal-text">
+                Оставьте заявку на презентацию франшизы и финансовую модель
+              </p>
+              <div class="modal-form">
+                <form class="modal-form__form">
+                  <div class="modal-form__input-box">
+                    <label for="modal-desc-name" class="modal-form__input-label"
+                      >Введите ваше имя</label
+                    >
+                    <div class="modal-form__input-wrapper">
+                      <input
+                        type="text"
+                        placeholder="Иванов Иван"
+                        name="name"
+                        data-type="name"
+                        id="modal-desc-name"
+                        class="modal-form__input"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-form__input-box">
+                    <label
+                      for="modal-desc-phone"
+                      class="modal-form__input-label"
+                      >Введите ваш телефон</label
+                    >
+                    <div class="modal-form__input-wrapper">
+                      <input
+                        type="text"
+                        placeholder="+7 (___) ___-__-__"
+                        name="phone"
+                        data-type="phone"
+                        id="modal-desc-phone"
+                        class="modal-form__input"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-form__input-box">
+                    <label
+                      for="modal-desc-email"
+                      class="modal-form__input-label"
+                      >Введите ваш e-mail</label
+                    >
+                    <div class="modal-form__input-wrapper">
+                      <input
+                        type="email"
+                        placeholder="example@mail.ru"
+                        name="email"
+                        data-type="email"
+                        id="modal-desc-email"
+                        class="modal-form__input"
+                      />
+                    </div>
+                  </div>
+                  <button class="button button_modal-form">
+                    Получить документацию
+                  </button>
+                  <p class="modal-form__policy">
+                    Нажимая на кнопку «Получить документацию», я даю согласие на
+                    обработку персональных данных и соглашаюсь с
+                    <button class="js-policy">
+                      политикой конфиденциальности
+                    </button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="income">
+        <div class="container">
+          <h2 class="income__title">
+            <img
+              src="./img/icons/angle/angle-top-left-white.png"
+              class="title__angle-top-left"
+            />
+            <img
+              src="./img/icons/angle/angle-top-right-white.png"
+              class="title__angle-top-right"
+            />
+            <img
+              src="./img/icons/angle/angle-bottom-left-white.png"
+              class="title__angle-bottom-left"
+            />
+            <img
+              src="./img/icons/angle/angle-bottom-right-white.png"
+              class="title__angle-bottom-right"
+            />
+            DARK KITCHEN: <br />
+            до 120% прибыли <br />
+            классического ресторана <br />
+            без 80% расходов
+          </h2>
+          <div class="income__content">
+            <p class="income__text">
+              Новый формат индустрии питания Dark Kitchen — заведение, где еду
+              готовят только на доставку, и нет зала с посадочными местами.
+            </p>
+            <ul class="income__list">
+              <li class="income__item">
+                Его бесспорное преимущество
+                <b>в отсутствии расходов на большое помещение</b> в популярном
+                месте — достаточно кухни 40–60 м2 в спальном районе.
+              </li>
+              <li class="income__item">
+                <b>Такому заведению нужен штат из 4–5 сотрудников,</b> оно
+                работает без многочисленных официантов, администраторов,
+                барменов.
+              </li>
+            </ul>
+            <p class="income__note">
+              Обслуживать клиентов как Dark Kitchen значительно проще: бизнес
+              запускается быстрее, стартовые инвестиции меньше, а окупаемость
+              — выше.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="modal">
@@ -295,19 +462,6 @@
           class="modal__close"
           title="Закрыть"
         ></button>
-      </div>
-    </div>
-    <div class="modal modal_video js-video-adv">
-      <div class="modal__center-wrapper">
-        <iframe
-          width="560"
-          height="315"
-          class="modal__video"
-          src="https://www.youtube.com/embed/p7-GpwMAnck"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
       </div>
     </div>
   </body>

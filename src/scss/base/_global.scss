@@ -1,8 +1,9 @@
 body {
-  background-color: white;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  color: white;
+  font-family: 'Gilroy', sans-serif;
   line-height: normal;
+  font-weight: 300;
 }
 
 main {
@@ -12,10 +13,10 @@ main {
 .container {
   position: relative;
   z-index: 1;
-  max-width: 1440px;
+  max-width: 1147px;
   margin: 0 auto;
 
-  @media (max-width: 1450px) {
+  @media (max-width: 1200px) {
     padding: 0 30px;
   }
 

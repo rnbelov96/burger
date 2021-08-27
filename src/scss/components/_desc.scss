@@ -1,0 +1,184 @@
+.desc {
+  padding-bottom: 170px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 1200px) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+}
+
+.desc__title {
+  font-family: 'Montserrat';
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  @include max-width(850px);
+  margin-bottom: 52px;
+  color: $yellow;
+
+  @media (max-width: 991px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 35px;
+    font-size: 37px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+.desc__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  gap: 10px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &::before {
+    content: url('/src/img/desc-fire.png');
+    position: absolute;
+    left: -387px;
+    top: -371px;
+    z-index: -1;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: url('/src/img/desc-burger.png');
+    position: absolute;
+    right: -437px;
+    top: -420px;
+    z-index: -1;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+}
+
+.desc__text-box {
+  @include max-width(480px);
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+
+.desc__text {
+  margin-bottom: 100px;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.25;
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 991px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  b {
+    font-weight: 600;
+  }
+}
+
+.desc__list {
+  @include reset-list;
+}
+
+.desc__item {
+  padding-left: 80px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  position: relative;
+  color: white;
+
+  @media (max-width: 575px) {
+    padding-left: 62px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+  }
+
+  &:nth-child(1)::before {
+    content: url('/src/img/icons/desc/1.png');
+  }
+
+  &:nth-child(2)::before {
+    content: url('/src/img/icons/desc/2.png');
+  }
+
+  &:nth-child(3)::before {
+    content: url('/src/img/icons/desc/3.png');
+  }
+}
+
+.desc__modal-box {
+  position: relative;
+  top: -50px;
+
+  @media (max-width: 991px) {
+    top: 0px;
+  }
+
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+
+.desc__modal-text {
+  font-size: 20px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: italic;
+  @include max-width(325px);
+  margin-bottom: 17px;
+  color: #ffb400;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/desc-arrow.png');
+    top: 18px;
+    left: -74px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+}

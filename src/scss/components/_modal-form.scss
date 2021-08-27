@@ -1,0 +1,104 @@
+.modal-form {
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(255, 255, 255, 0.28);
+  @include max-width(511px);
+
+  &_modal {
+    width: 98%;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 25px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
+
+.modal-form__form {
+  border-radius: 10px;
+  box-shadow: -2.2px 20.9px 30.1px 1.9px rgba(0, 0, 1, 0.28);
+  background-image: linear-gradient(to top, #f7f7f7, #f8f8f8);
+  padding-top: 35px;
+  padding-bottom: 25px;
+  padding-left: 75px;
+  padding-right: 64px;
+}
+
+.modal-form__input-label {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.modal-form__input-box {
+  margin-bottom: 15px;
+
+  &:nth-child(1) .modal-form__input-wrapper::before {
+    content: url('/src/img/icons/form/1.png');
+  }
+  &:nth-child(2) .modal-form__input-wrapper::before {
+    content: url('/src/img/icons/form/2.png');
+  }
+  &:nth-child(3) .modal-form__input-wrapper::before {
+    content: url('/src/img/icons/form/3.png');
+  }
+}
+
+.modal-form__input-wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.modal-form__input {
+  background-color: #eaeaea;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  min-height: 73px;
+  width: 100%;
+  padding-left: 67px;
+  font-size: 20px;
+  font-weight: 300;
+
+  &:focus {
+    outline: none;
+    border: 1px solid black;
+  }
+}
+
+.modal-form__policy {
+  margin-top: 23px;
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 0;
+  color: #010101;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #d52b38;
+    border: 6px solid #e0e0e0;
+    border-radius: 50%;
+    left: -26px;
+  }
+
+  button {
+    @include reset-btn;
+    font-size: 16px;
+    font-weight: 100;
+    color: #010101;
+  }
+}

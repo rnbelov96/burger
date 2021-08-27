@@ -1,31 +1,47 @@
 .button {
   @include reset-btn;
-  font-size: 25px;
-  line-height: 32px;
+  font-size: 18px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 7px;
   padding-right: 7px;
-  text-transform: uppercase;
   color: white;
-  font-weight: 900;
-  background: linear-gradient(180deg, #ffa665 0%, #fc4f19 100%);
-  box-shadow: 0px 6px 0px #cb3300;
-  border-radius: 8px;
+  font-weight: 400;
+  background-image: linear-gradient(to top, #d52b38, #de363f, #ff4c55, #f97071);
+  box-shadow: 0px 4px 0px #a43440;
+  border-radius: 100px;
   width: 100%;
-  min-height: 92px;
+  min-height: 81px;
   overflow: hidden;
   position: relative;
 
+  &_present {
+    display: none;
+
+    @media (max-width: 575px) {
+      display: block;
+      @include max-width(260px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   &:hover {
-    background: #fc4f19;
+    background-image: linear-gradient(
+      to top,
+      #971b22,
+      #b9262e,
+      #c42630,
+      #e46a71
+    );
   }
 
   &:active {
-    background: #cb3300;
+    background-color: #bf262d;
     top: 6px;
+    box-shadow: none;
   }
 
   &::after {
