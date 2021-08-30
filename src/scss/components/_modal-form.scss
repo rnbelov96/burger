@@ -5,16 +5,97 @@
   padding-right: 10px;
   background-color: rgba(255, 255, 255, 0.28);
   @include max-width(511px);
+  border-radius: 10px;
 
   &_modal {
     width: 98%;
   }
 
-  @media (max-width: 575px) {
-    padding-top: 25px;
-    padding-bottom: 17px;
-    padding-left: 30px;
-    padding-right: 20px;
+  &_partner {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url('/src/img/partner-girl.png');
+      left: -1023px;
+      top: -385px;
+      z-index: -1;
+
+      @media (max-width: 1200px) {
+        left: -901px;
+      }
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+  }
+
+  &_slider {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url('/src/img/slider-people.png');
+      left: -835px;
+      top: 109px;
+      z-index: -1;
+
+      @media (max-width: 1200px) {
+        left: -704px;
+      }
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+  }
+
+  &_calc {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url('/src/img/calc-left.png');
+      left: -875px;
+      top: -272px;
+      z-index: -1;
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: url('/src/img/calc-right.png');
+      right: -170px;
+      top: -130px;
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+  }
+
+  &_steps {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url('/src/img/steps-kitchen.png');
+      left: -1025px;
+      top: -322px;
+      z-index: -1;
+
+      @media (max-width: 1200px) {
+        top: -262px;
+      }
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
   }
 }
 
@@ -26,6 +107,13 @@
   padding-bottom: 25px;
   padding-left: 75px;
   padding-right: 64px;
+
+  @media (max-width: 575px) {
+    padding-top: 25px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
 }
 
 .modal-form__input-label {
@@ -97,7 +185,8 @@
 
   button {
     @include reset-btn;
-    font-size: 16px;
+    font-size: 15px;
+    text-align: left;
     font-weight: 100;
     color: #010101;
   }

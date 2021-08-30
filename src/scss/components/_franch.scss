@@ -1,0 +1,29 @@
+.franch {
+  min-height: 1925px;
+  @include bg;
+  background-image: url('/src/img/bgs/franch-bg.png');
+  position: relative;
+  top: -310px;
+  margin-bottom: -310px;
+
+  @media (max-width: 991px) {
+    top: -420px;
+    margin-bottom: -420px;
+    background-size: 1570px;
+    min-height: 1570px;
+  }
+
+  @media (max-width: 767px) {
+    top: -300px;
+    margin-bottom: -300px;
+    background-size: 1130px;
+    min-height: 1130px;
+  }
+
+  @media (max-width: 767px) {
+    top: -210px;
+    margin-bottom: -210px;
+    background-size: 770px;
+    min-height: 770px;
+  }
+}

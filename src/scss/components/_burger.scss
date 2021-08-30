@@ -1,0 +1,200 @@
+.burger {
+  min-height: 1176px;
+  @include bg;
+  background-image: url('/src/img/bgs/burger-bg.png');
+  padding-top: 140px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 991px) {
+    min-height: auto;
+    padding-top: 60px;
+    background-image: none;
+    padding-bottom: 40px;
+    padding-top: 60px;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.burger__title {
+  @include title;
+
+  @include max-width(647px);
+  margin-bottom: 153px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: 575px) {
+    margin-bottom: 70px;
+  }
+}
+
+.burger__text-box {
+  position: relative;
+
+  &::before {
+    content: url('/src/img/burger-spice-left.png');
+    position: absolute;
+    left: -388px;
+    top: -580px;
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: url('/src/img/burger-spice-right.png');
+    position: absolute;
+    right: -387px;
+    top: -670px;
+    pointer-events: none;
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+}
+
+.burger__text-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 100px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
+.burger__text {
+  @include max-width(245px);
+  position: relative;
+  margin-bottom: 0;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    padding-left: 30px;
+    font-size: 26px;
+
+    &::after {
+      content: url('/src/img/icons/burger/dot.png');
+      position: absolute;
+      left: 0;
+      top: 4px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    font-size: 22px;
+  }
+
+  &::before {
+    position: absolute;
+  }
+
+  &_1::before {
+    content: url('/src/img/icons/burger/1.png');
+    bottom: -102px;
+    left: 123px;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+  &_2::before {
+    content: url('/src/img/icons/burger/2.png');
+    bottom: -54px;
+    left: 112px;
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+  &_3::before {
+    content: url('/src/img/icons/burger/3.png');
+    bottom: -100px;
+    right: 109px;
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+  &_4::before {
+    content: url('/src/img/icons/burger/4.png');
+    bottom: -46px;
+    left: 70px;
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+  &_5::before {
+    content: url('/src/img/icons/burger/5.png');
+    bottom: -75px;
+    right: 55px;
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+  &_6::before {
+    content: url('/src/img/icons/burger/6.png');
+    bottom: -43px;
+    left: 12px;
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+  &_7 {
+    max-width: 200px;
+    &::before {
+      content: url('/src/img/icons/burger/7.png');
+      bottom: -42px;
+      right: 44px;
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+
+  &_center {
+    text-align: center;
+    position: relative;
+    top: -20px;
+    @media (max-width: 991px) {
+      text-align: left;
+      top: 0px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &_right {
+    text-align: right;
+    @media (max-width: 991px) {
+      text-align: left;
+    }
+  }
+}

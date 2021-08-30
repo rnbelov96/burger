@@ -1,4 +1,5 @@
 import './scss/style.scss';
+import './ts/slider';
 // import './ts/modals';
 // import './ts/calc';
 // import './ts/setup-forms';

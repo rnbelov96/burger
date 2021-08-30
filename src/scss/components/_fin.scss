@@ -1,0 +1,85 @@
+.fin {
+  min-height: 1024px;
+  @include bg;
+  background-image: url('/src/img/bgs/fin-bg.png');
+  padding-top: 155px;
+  padding-bottom: 225px;
+  color: black;
+
+  @media (max-width: 900px) {
+    padding-top: 112px;
+    padding-bottom: 105px;
+    min-height: auto;
+  }
+}
+
+.fin__title {
+  @include title;
+  @include max-width(695px);
+  margin-bottom: 126px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 80px;
+  }
+
+  span {
+    color: black;
+  }
+}
+
+.fin__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 72px;
+  @include max-width(830px);
+  position: relative;
+
+  @media (max-width: 575px) {
+    gap: 40px;
+  }
+
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+
+  &::before {
+    content: url('/src/img/fin-burger.png');
+    right: -540px;
+    top: -150px;
+    position: absolute;
+    z-index: -1;
+
+    @media (max-width: 900px) {
+      content: none;
+    }
+  }
+}
+
+.fin__item {
+  @include max-width(225px);
+
+  &:nth-child(3) {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+.fin__item-img {
+  margin-bottom: 35px;
+
+  @media (max-width: 575px) {
+    margin-bottom: 10px;
+  }
+}
+
+.fin__item-text {
+  margin-bottom: 0;
+
+  b {
+    font-size: 22px;
+    font-weight: 600;
+  }
+}

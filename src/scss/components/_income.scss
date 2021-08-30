@@ -75,6 +75,7 @@
 
   span {
     color: $yellow;
+    text-transform: uppercase;
   }
 
   @include max-width(516px);
