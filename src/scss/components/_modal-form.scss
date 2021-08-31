@@ -97,6 +97,38 @@
       }
     }
   }
+
+  &_tools {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url('/src/img/tools-burger.png');
+      left: -869px;
+      top: -428px;
+      z-index: -1;
+
+      @media (max-width: 1200px) {
+        top: -352px;
+      }
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: url('/src/img/tools-vet-right.png');
+      right: -310px;
+      top: -155px;
+      z-index: -1;
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+  }
 }
 
 .modal-form__form {
