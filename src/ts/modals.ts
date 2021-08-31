@@ -5,11 +5,9 @@ const openedModalList: Element[] = [];
 
 const modalFormInfoList = [
   {
-    title: 'на бесплатную консультацию',
     button: 'Получить консультацию',
   },
   {
-    title: 'на презентацию франшизы и финансовую модель',
     button: 'Получить презентацию',
   },
 ];
@@ -31,8 +29,7 @@ const openModal = (modalEl: HTMLDivElement) => {
 const modalElList = document.querySelectorAll('.modal');
 const [formModalEl, policyModalEl, youtubeAdvModalEl] = modalElList;
 
-const formTitleEl = formModalEl.querySelector('.js-modal-form-title') as HTMLSpanElement;
-const formBtnEl = formModalEl.querySelector('.js-modal-form-btn') as HTMLButtonElement;
+const formBtnEl = formModalEl.querySelectorAll('.js-modal-form-btn');
 
 const modalWrapperElList = document.querySelectorAll('.modal__center-wrapper');
 modalElList.forEach(modalEl => {
@@ -72,8 +69,9 @@ const callbackBtnElList = document.querySelectorAll('.js-callback');
 callbackBtnElList.forEach(btn => {
   btn.addEventListener('click', () => {
     openedModalList.unshift(formModalEl);
-    formTitleEl.textContent = modalFormInfoList[0].title;
-    formBtnEl.textContent = modalFormInfoList[0].button;
+    formBtnEl.forEach(el => {
+      el.textContent = modalFormInfoList[0].button;
+    });
     openModal(formModalEl as HTMLDivElement);
   });
 });
@@ -82,14 +80,9 @@ const presentBtnElList = document.querySelectorAll('.js-present');
 presentBtnElList.forEach(btn => {
   btn.addEventListener('click', () => {
     openedModalList.unshift(formModalEl);
-    formTitleEl.textContent = modalFormInfoList[1].title;
-    formBtnEl.textContent = modalFormInfoList[1].button;
+    formBtnEl.forEach(el => {
+      el.textContent = modalFormInfoList[1].button;
+    });
     openModal(formModalEl as HTMLDivElement);
   });
-});
-
-const youtubeAdvBtnCallEl = document.querySelector('.js-youtube-adv');
-youtubeAdvBtnCallEl?.addEventListener('click', () => {
-  openedModalList.unshift(youtubeAdvModalEl);
-  openModal(youtubeAdvModalEl as HTMLDivElement);
 });

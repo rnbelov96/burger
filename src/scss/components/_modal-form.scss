@@ -9,6 +9,10 @@
 
   &_modal {
     width: 98%;
+
+    .modal-form__policy {
+      text-align: left;
+    }
   }
 
   &_partner {
@@ -122,6 +126,38 @@
       content: url('/src/img/tools-vet-right.png');
       right: -310px;
       top: -155px;
+      z-index: -1;
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+  }
+
+  &_invest {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url('/src/img/invest-paper.png');
+      left: -532px;
+      top: 184px;
+      z-index: -1;
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+  }
+
+  &_city {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url('/src/img/city-burger.png');
+      left: -1026px;
+      top: 188px;
       z-index: -1;
 
       @media (max-width: 991px) {

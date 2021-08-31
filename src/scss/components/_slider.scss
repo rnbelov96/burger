@@ -164,6 +164,12 @@
   @media (max-width: 767px) {
     left: -60px;
   }
+
+  &_review {
+    @media (max-width: 767px) {
+      left: -27px;
+    }
+  }
 }
 
 .slider__btn-next {
@@ -171,6 +177,12 @@
   right: -80px;
   @media (max-width: 767px) {
     right: -60px;
+  }
+
+  &_review {
+    @media (max-width: 767px) {
+      right: -27px;
+    }
   }
 }
 

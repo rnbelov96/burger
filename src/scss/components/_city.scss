@@ -1,0 +1,67 @@
+.city {
+  @include bg;
+  background-image: url('/src/img/bgs/city-bg.png');
+  min-height: 1273px;
+  padding-top: 100px;
+
+  @media (max-width: 991px) {
+    padding-top: 70px;
+    min-height: auto;
+  }
+}
+
+.city__title {
+  @include title;
+  @include max-width(647px);
+  margin-bottom: 129px;
+}
+
+.city__modal-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 207px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+}
+
+.city__modal-text {
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  @include max-width(497px);
+  position: relative;
+  margin-bottom: 0;
+  top: 10px;
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+
+  b {
+    font-weight: 600;
+  }
+
+  @media (max-width: 1200px) {
+    top: 0px;
+  }
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/city-arrow.png');
+    top: 68px;
+    left: 276px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+}

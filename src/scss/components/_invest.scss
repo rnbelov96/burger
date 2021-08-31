@@ -1,0 +1,120 @@
+.invest {
+  @include bg;
+  min-height: 1282px;
+  background-image: url('/src/img/bgs/invest-bg.png');
+  padding-top: 117px;
+  padding-bottom: 80px;
+
+  @media (max-width: 1040px) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+
+.invest__title {
+  @include title;
+  @include max-width(760px);
+  margin-bottom: 154px;
+
+
+  @media (max-width: 1040px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+  }
+}
+
+.invest__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+
+  @media (max-width: 1040px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.invest__table {
+  @include max-width(555px);
+}
+
+.invest__row {
+  display: flex;
+  background-color: #242424;
+  min-height: 60px;
+
+  &:nth-child(2n-1) {
+    background-color: #2c2c2c;
+  }
+}
+
+.invest__table-text {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  width: 57.65%;
+  border-right: 1px solid white;
+
+  span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $yellow;
+  }
+}
+
+.invest__table-number {
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 42.35%;
+
+  span {
+    font-weight: bold;
+    color: $yellow;
+  }
+}
+
+.invest__modal-box {
+  position: relative;
+  top: 134px;
+
+  @media (max-width: 1040px) {
+    top: 0px;
+  }
+}
+
+.invest__modal-text {
+  font-size: 20px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: italic;
+  @include max-width(410px);
+  color: #ffb400;
+  margin-bottom: 44px;
+
+  @media (max-width: 1040px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/invest-arrow.png');
+    top: 18px;
+    left: 444px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+}

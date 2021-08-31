@@ -4,91 +4,132 @@
 @import './base/mixins.scss';
 @import './base/global.scss';
 @import './components/modal.scss';
+@import './components/button.scss';
 @import './components/priv-policy.scss';
 
-.thanks,
-.error {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
+.thanks {
+  background-color: black;
+  @include bg;
+  background-image: url('/src/img/bgs/thanks-bg.png');
+  min-height: 981px;
+  padding-top: 10px;
+  padding-bottom: 80px;
 
-  &__body {
-    background-color: black;
-  }
-
-  &__body,
-  &__html {
-    height: 100%;
-  }
-
-  &__header {
-    overflow: hidden;
-    flex: 0 0 auto;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
-  .container {
-    max-width: 1140px;
-  }
-
-  footer {
-    flex: 0 0 auto;
-  }
-
-  &__content {
-    flex: 1 0 auto;
-    padding: 40px 0;
-
-    .container {
-      height: 100%;
-    }
-  }
-
-  &__content-wrapper {
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
-
-  &__content-box {
-    width: 100%;
-  }
-
-  &__title {
-    color: white;
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-  }
-
-  &__user-name {
-    text-transform: uppercase;
-  }
-
-  &__subtitle {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-  }
-
-  &__link {
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-  }
-
-  &__btn-box {
-    display: flex;
-    justify-content: center;
+  @media (max-width: 575px) {
+    min-height: auto;
+    padding-bottom: 40px;
   }
 }
 
-.error {
-  &__btn-box {
-    margin-top: 20px;
+.thanks__logo {
+  display: block;
+  margin-bottom: 60px;
+
+  @media (max-width: 575px) {
+    margin-bottom: 40px;
+  }
+}
+
+.thanks__title {
+  font-family: 'Montserrat';
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $yellow;
+  margin-bottom: 52px;
+
+  @media (max-width: 767px) {
+    font-size: 50px;
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.thanks__text {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 71px;
+
+  @media (max-width: 575px) {
+    br {
+      display: none;
+    }
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+
+.thanks__list {
+  @include reset-list;
+  margin-bottom: 34px;
+}
+
+.thanks__item {
+  padding-left: 65px;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    content: url('/src/img/icons/thanks/1.png');
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    &::before {
+      content: url('/src/img/icons/thanks/2.png');
+    }
+  }
+}
+
+.thanks__links-box {
+  display: flex;
+  @include max-width(675px);
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.thanks__socials {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.thanks__social-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.thanks__social {
+  width: 25px;
+  height: 25px;
+
+  &:nth-child(2) {
+    background-image: url('/src/img/icons/thanks/3.png');
+  }
+  &:nth-child(3) {
+    background-image: url('/src/img/icons/thanks/4.png');
+  }
+  &:nth-child(4) {
+    background-image: url('/src/img/icons/thanks/5.png');
+  }
+}
+
+.thanks__link {
+  @include max-width(351px);
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }

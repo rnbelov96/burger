@@ -1,0 +1,98 @@
+.footer {
+  min-height: 147px;
+  padding-bottom: 50px;
+
+  @media (max-width: 780px) {
+    padding-bottom: 20px;
+  }
+}
+
+.footer__content {
+  padding-top: 40px;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+}
+
+.footer__name {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.footer__center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 780px) {
+    align-items: center;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.footer__social-text {
+  margin-bottom: 0;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.footer__social-link {
+  width: 18px;
+  height: 18px;
+
+  &:nth-child(2) {
+    background-image: url('/src/img/icons/insta.png')
+  }
+  &:nth-child(3) {
+    background-image: url('/src/img/icons/vk.png')
+  }
+}
+
+.footer__policy {
+  @include reset-btn;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.footer__phone-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 780px) {
+    align-items: center;
+  }
+}
+
+.footer__phone {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 8px;
+
+  &:hover, &:focus, &:active {
+    text-decoration: underline;
+    color: white;
+  }
+}
+
+.footer__callback {
+  @include reset-btn;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: underline;
+}
