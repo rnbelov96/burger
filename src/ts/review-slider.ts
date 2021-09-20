@@ -117,6 +117,24 @@ const swipeEnd = () => {
     }
   }
 
+  if (currentImage === imagesLength) {
+    imgBgElList[3].classList.add('visually-hidden');
+
+    setTimeout(() => {
+      imgBgElList[currentImage + 3].classList.add('visually-hidden');
+      imgBgElList[3].classList.remove('visually-hidden');
+    }, 500);
+  }
+
+  if (currentImage === 1) {
+    imgBgElList[4 + imagesLength].classList.add('visually-hidden');
+
+    setTimeout(() => {
+      imgBgElList[currentImage + 3].classList.add('visually-hidden');
+      imgBgElList[4 + imagesLength].classList.remove('visually-hidden');
+    }, 500);
+  }
+
   imgBgElList[currentImage + 3].classList.add('visually-hidden');
 
   offset = 0;
@@ -155,6 +173,24 @@ prevBtnEl.addEventListener('click', () => {
     currentImage = imagesLength;
   }
 
+  if (currentImage === imagesLength) {
+    imgBgElList[3].classList.add('visually-hidden');
+
+    setTimeout(() => {
+      imgBgElList[currentImage + 3].classList.add('visually-hidden');
+      imgBgElList[3].classList.remove('visually-hidden');
+    }, 500);
+  }
+
+  if (currentImage === 1) {
+    imgBgElList[4 + imagesLength].classList.add('visually-hidden');
+
+    setTimeout(() => {
+      imgBgElList[currentImage + 3].classList.add('visually-hidden');
+      imgBgElList[4 + imagesLength].classList.remove('visually-hidden');
+    }, 500);
+  }
+
   imgBgElList[currentImage + 3].classList.add('visually-hidden');
 
   imagesBoxEl.style.transform = `translate3d(${translateXPos}%, 0px, 0px)`;
@@ -178,6 +214,24 @@ nextBtnEl.addEventListener('click', () => {
   currentImage += 1;
   if (currentImage === imagesLength + 1) {
     currentImage = 1;
+  }
+
+  if (currentImage === imagesLength) {
+    imgBgElList[3].classList.add('visually-hidden');
+
+    setTimeout(() => {
+      imgBgElList[currentImage + 3].classList.add('visually-hidden');
+      imgBgElList[3].classList.remove('visually-hidden');
+    }, 500);
+  }
+
+  if (currentImage === 1) {
+    imgBgElList[4 + imagesLength].classList.add('visually-hidden');
+
+    setTimeout(() => {
+      imgBgElList[currentImage + 3].classList.add('visually-hidden');
+      imgBgElList[4 + imagesLength].classList.remove('visually-hidden');
+    }, 500);
   }
 
   imgBgElList[currentImage + 3].classList.add('visually-hidden');
