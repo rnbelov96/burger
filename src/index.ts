@@ -1,5 +1,5 @@
 import './scss/style.scss';
-import './ts/slider';
+import './ts/sliders';
 import './ts/review-slider';
 import './ts/modals';
 // import './ts/calc';

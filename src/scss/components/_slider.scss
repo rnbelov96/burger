@@ -74,7 +74,11 @@
   }
 }
 
-.slider {
+.slider,
+.wok-slider,
+.drinks-slider,
+.deserts-slider,
+.appet-slider {
   &__slider-box {
     @include max-width(438px);
     margin-left: auto;
@@ -128,7 +132,15 @@
 }
 
 .slider__btn-next,
-.slider__btn-prev {
+.slider__btn-prev,
+.wok-slider__btn-prev,
+.drinks-slider__btn-prev,
+.deserts-slider__btn-prev,
+.appet-slider__btn-prev,
+.wok-slider__btn-next,
+.drinks-slider__btn-next,
+.deserts-slider__btn-next,
+.appet-slider__btn-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -158,7 +170,11 @@
   }
 }
 
-.slider__btn-prev {
+.slider__btn-prev,
+.wok-slider__btn-prev,
+.drinks-slider__btn-prev,
+.deserts-slider__btn-prev,
+.appet-slider__btn-prev {
   background-image: url('/src/img/icons/slider-arrow-left.png');
   left: -80px;
   @media (max-width: 767px) {
@@ -172,7 +188,11 @@
   }
 }
 
-.slider__btn-next {
+.slider__btn-next,
+.wok-slider__btn-next,
+.drinks-slider__btn-next,
+.deserts-slider__btn-next,
+.appet-slider__btn-next {
   background-image: url('/src/img/icons/slider-arrow-right.png');
   right: -80px;
   @media (max-width: 767px) {
@@ -186,7 +206,11 @@
   }
 }
 
-.slider__item-box {
+.slider__item-box,
+.wok-slider__item-box,
+.drinks-slider__item-box,
+.deserts-slider__item-box,
+.appet-slider__item-box {
   width: 100%;
   display: flex;
   justify-content: space-between;
