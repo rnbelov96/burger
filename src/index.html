@@ -455,7 +455,7 @@
               </p>
             </div>
           </div>
-          <img src="./img/burger.png" alt="Бургер" class="burger__img">
+          <img src="./img/burger.png" alt="Бургер" class="burger__img" />
         </div>
       </section>
 
@@ -486,7 +486,9 @@
             4 категорий блюд, покоряющих от 3000 покупателей в месяц
           </h2>
           <ul class="slider__tab-list">
-            <li class="slider__tab slider__tab_active" data-tab-number="1">Бургеры</li>
+            <li class="slider__tab slider__tab_active" data-tab-number="1">
+              Бургеры
+            </li>
             <li class="slider__tab" data-tab-number="2">Закуски</li>
             <li class="slider__tab" data-tab-number="3">Вок</li>
             <li class="slider__tab" data-tab-number="4">Напитки</li>
@@ -608,7 +610,7 @@
                   <div class="appet-slider__img-bg"></div>
                   <img src="./img/gallery/slider/appet/8.jpg" alt="Бургер" />
                 </div>
-          
+
                 <div class="appet-slider__img-item">
                   <div class="appet-slider__img-bg"></div>
                   <img src="./img/gallery/slider/appet/1.jpg" alt="Бургер" />
@@ -641,7 +643,7 @@
                   <div class="appet-slider__img-bg"></div>
                   <img src="./img/gallery/slider/appet/8.jpg" alt="Бургер" />
                 </div>
-          
+
                 <div class="appet-slider__img-item">
                   <div class="appet-slider__img-bg"></div>
                   <img src="./img/gallery/slider/appet/1.jpg" alt="Бургер" />
@@ -665,7 +667,7 @@
             ><button class="appet-slider__btn-next">
               <img src="./img/icons/slider-arrow-right.png" />
             </button>
-          </div> 
+          </div>
           <div class="wok-slider__slider-box visually-hidden js-slider">
             <div class="wok-slider__wrapper">
               <div class="wok-slider__img-box">
@@ -685,7 +687,7 @@
                   <div class="wok-slider__img-bg"></div>
                   <img src="./img/gallery/slider/wok/7.jpg" alt="Бургер" />
                 </div>
-          
+
                 <div class="wok-slider__img-item">
                   <div class="wok-slider__img-bg"></div>
                   <img src="./img/gallery/slider/wok/1.jpg" alt="Бургер" />
@@ -714,7 +716,7 @@
                   <div class="wok-slider__img-bg"></div>
                   <img src="./img/gallery/slider/wok/7.jpg" alt="Бургер" />
                 </div>
-          
+
                 <div class="wok-slider__img-item">
                   <div class="wok-slider__img-bg"></div>
                   <img src="./img/gallery/slider/wok/1.jpg" alt="Бургер" />
@@ -758,7 +760,7 @@
                   <div class="drinks-slider__img-bg"></div>
                   <img src="./img/gallery/slider/drinks/5.jpg" alt="Бургер" />
                 </div>
-          
+
                 <div class="drinks-slider__img-item">
                   <div class="drinks-slider__img-bg"></div>
                   <img src="./img/gallery/slider/drinks/1.jpg" alt="Бургер" />
@@ -779,7 +781,7 @@
                   <div class="drinks-slider__img-bg"></div>
                   <img src="./img/gallery/slider/drinks/5.jpg" alt="Бургер" />
                 </div>
-          
+
                 <div class="drinks-slider__img-item">
                   <div class="drinks-slider__img-bg"></div>
                   <img src="./img/gallery/slider/drinks/1.jpg" alt="Бургер" />
@@ -823,7 +825,7 @@
                   <div class="deserts-slider__img-bg"></div>
                   <img src="./img/gallery/slider/deserts/4.jpg" alt="Бургер" />
                 </div>
-          
+
                 <div class="deserts-slider__img-item">
                   <div class="deserts-slider__img-bg"></div>
                   <img src="./img/gallery/slider/deserts/1.jpg" alt="Бургер" />
@@ -840,7 +842,7 @@
                   <div class="deserts-slider__img-bg"></div>
                   <img src="./img/gallery/slider/deserts/4.jpg" alt="Бургер" />
                 </div>
-          
+
                 <div class="deserts-slider__img-item">
                   <div class="deserts-slider__img-bg"></div>
                   <img src="./img/gallery/slider/deserts/1.jpg" alt="Бургер" />
@@ -865,7 +867,6 @@
               <img src="./img/icons/slider-arrow-right.png" />
             </button>
           </div>
-                   
 
           <div class="slider__modal-box">
             <p class="slider__modal-text">
@@ -1040,27 +1041,38 @@
                 <input
                   type="range"
                   class="calc__input js-range js-burger-range"
+                  min="1000"
+                  max="7000"
+                  step="1000"
                 />
               </div>
               <div class="calc__endpoints">
-                <div class="calc__endpoint">250 000</div>
-                <div class="calc__endpoint">300 000</div>
-                <div class="calc__endpoint">400 000</div>
-                <div class="calc__endpoint">500 000</div>
-                <div class="calc__endpoint">600 000</div>
+                <div class="calc__endpoint">1000</div>
+                <div class="calc__endpoint">2000</div>
+                <div class="calc__endpoint">3000</div>
+                <div class="calc__endpoint">4000</div>
+                <div class="calc__endpoint">5000</div>
+                <div class="calc__endpoint">6000</div>
+                <div class="calc__endpoint">7000</div>
               </div>
             </div>
             <div class="calc__input-box">
               <p class="calc__input-label">Воки</p>
               <div class="calc__input-wrapper">
-                <input type="range" class="calc__input js-range js-vok-range" />
+                <input
+                  type="range"
+                  class="calc__input js-range js-wok-range"
+                  min="100"
+                  max="300"
+                  step="50"
+                />
               </div>
               <div class="calc__endpoints">
-                <div class="calc__endpoint">250 000</div>
-                <div class="calc__endpoint">300 000</div>
-                <div class="calc__endpoint">400 000</div>
-                <div class="calc__endpoint">500 000</div>
-                <div class="calc__endpoint">600 000</div>
+                <div class="calc__endpoint">100</div>
+                <div class="calc__endpoint">150</div>
+                <div class="calc__endpoint">200</div>
+                <div class="calc__endpoint">250</div>
+                <div class="calc__endpoint">300</div>
               </div>
             </div>
             <div class="calc__input-box">
@@ -1069,14 +1081,16 @@
                 <input
                   type="range"
                   class="calc__input js-range js-snack-range"
+                  min="400"
+                  max="1000"
+                  step="200"
                 />
               </div>
               <div class="calc__endpoints">
-                <div class="calc__endpoint">250 000</div>
-                <div class="calc__endpoint">300 000</div>
-                <div class="calc__endpoint">400 000</div>
-                <div class="calc__endpoint">500 000</div>
-                <div class="calc__endpoint">600 000</div>
+                <div class="calc__endpoint">400</div>
+                <div class="calc__endpoint">600</div>
+                <div class="calc__endpoint">800</div>
+                <div class="calc__endpoint">1000</div>
               </div>
             </div>
             <div class="calc__input-box">
@@ -1085,14 +1099,16 @@
                 <input
                   type="range"
                   class="calc__input js-range js-dessert-range"
+                  min="50"
+                  max="200"
+                  step="50"
                 />
               </div>
               <div class="calc__endpoints">
-                <div class="calc__endpoint">250 000</div>
-                <div class="calc__endpoint">300 000</div>
-                <div class="calc__endpoint">400 000</div>
-                <div class="calc__endpoint">500 000</div>
-                <div class="calc__endpoint">600 000</div>
+                <div class="calc__endpoint">50</div>
+                <div class="calc__endpoint">100</div>
+                <div class="calc__endpoint">150</div>
+                <div class="calc__endpoint">200</div>
               </div>
             </div>
             <div class="calc__input-box">
@@ -1101,14 +1117,18 @@
                 <input
                   type="range"
                   class="calc__input js-range js-drink-range"
+                  min="50"
+                  max="300"
+                  step="50"
                 />
               </div>
               <div class="calc__endpoints">
-                <div class="calc__endpoint">250 000</div>
-                <div class="calc__endpoint">300 000</div>
-                <div class="calc__endpoint">400 000</div>
-                <div class="calc__endpoint">500 000</div>
-                <div class="calc__endpoint">600 000</div>
+                <div class="calc__endpoint">50</div>
+                <div class="calc__endpoint">100</div>
+                <div class="calc__endpoint">150</div>
+                <div class="calc__endpoint">200</div>
+                <div class="calc__endpoint">250</div>
+                <div class="calc__endpoint">300</div>
               </div>
             </div>
             <div class="calc__result-text">
@@ -2115,7 +2135,10 @@
 
           <footer class="footer">
             <div class="footer__content">
-              <p class="footer__name">© «Big Boss Burger», 2021</p>
+              <div class="footer__name-box">
+                <p class="footer__name">ООО «ГОЛДЕН ГРУПП»</p>
+                <p class="footer__inn">ИНН 166016258303</p>
+              </div>
               <div class="footer__center">
                 <div class="footer__socials">
                   <p class="footer__social-text">Мы в социальных сетях</p>
@@ -2125,6 +2148,11 @@
                 <button class="footer__policy js-policy">
                   Политика конфиденциальности
                 </button>
+                <a
+                  class="footer__franch5"
+                  href="https://xn--5-7sbamtgf4aex7b0b.xn--p1ai/"
+                  >Сделано Франчайзинг5 —  упаковка и продвижение франшиз</a
+                >
               </div>
               <div class="footer__phone-box">
                 <a href="tel:+78000000000" class="footer__phone"
@@ -2230,7 +2258,8 @@
           <li class="priv-policy__item">
             2. Настоящая политика Оператора в отношении обработки персональных
             данных (далее – Политика) применяется ко всей информации, которую
-            Оператор может получить о посетителях веб-сайта компании ООО «ГОЛден групп».
+            Оператор может получить о посетителях веб-сайта компании ООО «ГОЛден
+            групп».
           </li>
         </ol>
 
@@ -2356,9 +2385,8 @@
             новых продуктах и услугах, специальных предложениях и различных
             событиях. Пользователь всегда может отказаться от получения
             информационных сообщений, направив Оператору письмо на адрес
-            электронной почты с доменом polezhaj@inbox.ru с пометкой «Отказ
-            от уведомлений о новых продуктах и услугах и специальных
-            предложениях».
+            электронной почты с доменом polezhaj@inbox.ru с пометкой «Отказ от
+            уведомлений о новых продуктах и услугах и специальных предложениях».
           </li>
           <li class="priv-policy__item">
             3. Обезличенные данные Пользователей, собираемые с помощью сервисов

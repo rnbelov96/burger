@@ -25,13 +25,20 @@
 
 .footer__name {
   font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer__inn {
   margin-bottom: 0;
+  @media (max-width: 780px) {
+    text-align: center;
+  }
 }
 
 .footer__center {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 
   @media (max-width: 780px) {
     align-items: center;
@@ -55,10 +62,10 @@
   height: 18px;
 
   &:nth-child(2) {
-    background-image: url('/src/img/icons/insta.png')
+    background-image: url('/src/img/icons/insta.png');
   }
   &:nth-child(3) {
-    background-image: url('/src/img/icons/vk.png')
+    background-image: url('/src/img/icons/vk.png');
   }
 }
 
@@ -67,6 +74,20 @@
   font-size: 18px;
   font-weight: 300;
   text-decoration: underline;
+  margin-bottom: 12px;
+}
+
+.footer__franch5 {
+  color: white;
+  text-align: center;
+  @include max-width(342px);
+  font-size: 18px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: white;
+  }
 }
 
 .footer__phone-box {
@@ -84,7 +105,9 @@
   color: white;
   margin-bottom: 8px;
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     text-decoration: underline;
     color: white;
   }
