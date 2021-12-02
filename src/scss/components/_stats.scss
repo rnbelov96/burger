@@ -97,17 +97,15 @@
   &::before {
     position: absolute;
     content: '';
-    box-shadow: 0 0 32.8px 7.2px rgba(244, 208, 58, 0.78);
-    background-image: url('/src/img/icons/stats-check.png'),
-      linear-gradient(to top, #ffb400, #ffb400, #fec53c, #fed87e);
+    background-image: url('/src/img/icons/stats-check.png');
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    width: 52px;
-    height: 52px;
+    width: 106px;
+    height: 106px;
     left: 50%;
     top: 0;
-    transform: translateX(-47%) translateY(-50%);
+    transform: translateX(-49%) translateY(-50%);
   }
 }
 
