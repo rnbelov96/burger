@@ -1018,7 +1018,7 @@ desertwrapperEl.addEventListener('mouseleave', desertswipeLeave);
 // drinks
 export {};
 
-const drinksimagesLength = 4;
+const drinksimagesLength = 5;
 let drinkscurrentImage = 1;
 const drinksmode = 1;
 
